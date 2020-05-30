@@ -1,9 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
+import './styles/index.scss';
 
 ReactDOM.render(
   <React.StrictMode>
+		<h1>222</h1>
+		<h2>222</h2>
+		<a href="http://www.baidu.com">222</a>
   </React.StrictMode>,
   document.getElementById('root')
 );
