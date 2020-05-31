@@ -10,7 +10,7 @@ const app:React.FC = () => {
 				alert(111)
 			}}>disabled</Button>
 			<Button btnType='danger' size='lg'>Large</Button>
-			<Button btnType='primary' size='small'>Small</Button>
+			<Button btnType='primary' size='sm'>Small</Button>
 			<Button btnType='link' disabled={true} href="https://www.baidu.com">www.baidu.com</Button>
 		</div>
 	)
