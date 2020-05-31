@@ -344,7 +344,7 @@ label {
 
 button {
   // stylelint-disable-next-line property-blacklist
-  border-radius: 0;
+	border-radius: 0;
 }
 
 // Work around a Firefox/IE bug where the transparent `button` background
@@ -353,8 +353,7 @@ button {
 // Credit: https://github.com/suitcss/base/
 
 button:focus {
-  outline: 1px dotted;
-  outline: 5px auto -webkit-focus-ring-color;
+	outline: none;
 }
 
 // 1. Remove the margin in Firefox and Safari
