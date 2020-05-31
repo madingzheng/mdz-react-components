@@ -1,7 +1,7 @@
 import React, {FC, ButtonHTMLAttributes, AnchorHTMLAttributes} from 'react';
 import classNames from 'classnames';
 
-type ButtonSize = 'lg' | 'small';
+type ButtonSize = 'lg' | 'sm';
 
 type ButtonType = 'primary' | 'default' | 'danger' | 'link';
 
