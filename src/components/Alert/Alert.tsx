@@ -19,7 +19,8 @@ export const Alert:FC<BaseAlertProps> = (props) => {
 		title,
 		description,
 		alertType,
-		closable
+		closable,
+		...restProps
 	} = props
 	const [isShow, setShow] = useState(true);
 	const classes = classNames('mdz-alert',{
@@ -32,7 +33,7 @@ export const Alert:FC<BaseAlertProps> = (props) => {
 	if (isShow) {
 		if (description) {
 			return (
-				<div className={classes}>
+				<div className={classes} {...restProps}>
 					<span className={titleClasses}>{title}</span>
 					<p>{description}</p>
 					{closable ? <span className={imgClasses} onClick={() => {setShow(false)}}><img src={close} alt="close" /></span> : ''}
@@ -40,7 +41,7 @@ export const Alert:FC<BaseAlertProps> = (props) => {
 			)
 		} else {
 			return (
-				<div className={classes}>
+				<div className={classes} {...restProps}>
 					<span className={titleClasses}>{title}</span>
 					{closable ? <span className={imgClasses} onClick={() => {setShow(false)}}><img src={close} alt="close" /></span> : ''}
 				</div>
