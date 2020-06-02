@@ -1,0 +1,37 @@
+.mdz-alert {
+	position: relative;
+	padding: $alert-padding-x $alert-padding-y;
+	margin-bottom: $alert-margin-bottom;
+	border: $alert-border-width solid transparent;
+	border-radius: $alert-border-radius;
+	transition: $alert-transition;
+	@include zoom-animation();
+}
+
+.mdz-default-alert {
+	@include alert-style($white, $primary, $primary);
+}
+
+.mdz-success-alert {
+	@include alert-style($white, $success, $success);
+}
+
+.mdz-danger-alert {
+	@include alert-style($white, $danger, $danger);
+}
+
+.mdz-warning-alert {
+	@include alert-style($white, $warning, $warning);
+}
+
+.mdz-alert-close {
+	position: absolute;
+	top: 0;
+	right: 0;
+	padding: $alert-padding-x $alert-padding-y;
+	cursor: pointer;
+}
+
+.bold-title {
+	font-weight: $font-weight-bold;
+}

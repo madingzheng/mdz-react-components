@@ -1,17 +1,14 @@
 import React from 'react';
-import {Button} from './components/Button/Button'
+import {Alert} from './components/Alert/Alert'
 import './App.css';
 
 const app:React.FC = () => {
 	return (
 		<div>
-			<Button disabled={false}>hello</Button>
-			<Button onClick={() => {
-				alert(111)
-			}}>disabled</Button>
-			<Button btnType='danger' size='lg'>Large</Button>
-			<Button btnType='primary' size='sm'>Small</Button>
-			<Button btnType='link' disabled={true} href="https://www.baidu.com">www.baidu.com</Button>
+			<Alert title="this is alert!" description="this is a long description" closable={true}/>
+			<Alert title="this is alert!" alertType="danger" closable={true}/>
+			<Alert title="this is alert!" alertType="success" closable={true}/>
+			<Alert title="this is alert!" alertType="warning" closable={true}/>
 		</div>
 	)
 };
