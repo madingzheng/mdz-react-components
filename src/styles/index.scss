@@ -1,17 +1,20 @@
 // config
 @import "variables";
 
-//layout
+// layout
 @import "reboot";
 
-//mixin
+// mixin
 @import "mixin";
 
-//animation
+// animation
 @import "animation";
 
-//Button
+// Button
 @import "../components/Button/styles";
 
-//Alert
+// Alert
 @import "../components/Alert/styles";
+
+// Menu
+@import "../components/Menu/styles"
