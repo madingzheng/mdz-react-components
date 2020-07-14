@@ -1,9 +1,10 @@
 import React from 'react';
 import { Button } from './components/Button/Button'
 // import { Alert } from './components/Alert/Alert'
-// import { Menu } from './components/Menu/Menu';
-// import { MenuItem } from './components/Menu/MenuItem';
-// import { SubMenu } from './components/Menu/subMenu';
+import { Menu } from './components/Menu/Menu';
+import { MenuItem } from './components/Menu/MenuItem';
+import { SubMenu } from './components/Menu/subMenu';
+import { Icon } from './components/Icon/Icon'
 import './App.css';
 
 const app:React.FC = () => {
@@ -11,10 +12,11 @@ const app:React.FC = () => {
 		<div className="app_box">
 			<div className="container_box">
 				<Button>12</Button>
+				{/* <Icon theme="danger" icon="arrow-up" size="9x"></Icon> */}
 				{/* <Alert title="this is alert!" description="this is a long description" closable={true}/>
 				<Alert title="this is alert!" alertType="danger" closable={true}/>
 				<Alert title="this is alert!" alertType="success" closable={true}/>
-				<Alert title="this is alert!" alertType="warning" closable={true}/>
+				<Alert title="this is alert!" alertType="warning" closable={true}/> */}
 				<Menu>
 					<MenuItem>
 						active
@@ -34,8 +36,8 @@ const app:React.FC = () => {
 						link
 					</MenuItem>
 				</Menu>
-				<Menu mode="vertical" defaultOpenSubMenus={['223']}> */}
-					{/* <MenuItem>111</MenuItem>
+				<Menu mode="vertical" defaultOpenSubMenus={['223']}>
+					<MenuItem>111</MenuItem>
 					<SubMenu title="dropdown2" index={'122'}>
 						<MenuItem>
 							dropdown1
@@ -45,7 +47,7 @@ const app:React.FC = () => {
 						</MenuItem>
 					</SubMenu>
 					<MenuItem>333</MenuItem>
-				</Menu> */}
+				</Menu>
 			</div>
 		</div>
 	)
