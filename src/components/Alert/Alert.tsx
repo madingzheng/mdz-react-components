@@ -58,4 +58,4 @@ export const Alert:FC<BaseAlertProps> = (props) => {
 Alert.defaultProps = {
 	alertType: 'default',
 	closable: true
-}
+};

@@ -80,4 +80,4 @@ export const Menu:FC<MenuProps> = (props) => {
 Menu.defaultProps = {
 	defaultIndex: '0',
 	mode: 'horizontal'
-}
+};
