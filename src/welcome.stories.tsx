@@ -6,10 +6,7 @@ storiesOf('Welcome page', module)
     return (
       <>
         <h1>欢迎来到 mdz 组件库</h1>
-        <h3>安装试试</h3>
-        <code>
-          npm install mdz-react-components --save
-        </code>
+        <h3>暂时只有几个组件</h3>
       </>
     )
   }, { info : { disable: true }})
